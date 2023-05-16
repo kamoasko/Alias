@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+
+    <title>Alias</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__top flex">
+        <div class="navbar__menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navbar__whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="navbar__mobile">
+          <ul class="navbar__mobmenu">
+            <li><a href="">Ana səhifə</a></li>
+            <li><a href="">Haqqımızda</a></li>
+            <li><a href="">Xidmətlər</a></li>
+            <li><a href="">Vakansiyalar</a></li>
+            <li><a href="./articles.html">Məqalələr</a></li>
+            <li><a href="">Əməkdaşlar</a></li>
+            <li><a href="">Əlaqə</a></li>
+          </ul>
+          <ul class="navbar__mobile__langs">
+            <li class="navbar__mobile__langs__item"><a href="">EN</a></li>
+            <li class="navbar__mobile__langs__item active">
+              <a href="">AZ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__top__left flex">
+          <div class="navbar__top__left__image">
+            <a href=""
+              ><img src="./assets/images/Header/locations-icon.png" alt=""
+            /></a>
+          </div>
+          <span
+            >Bakı şəh., Nərimanov r-nu, X.Şuşinski ilə M.Sənani küçələrinin
+            kəsişməsi (Bina MTK)</span
+          >
+        </div>
+        <div class="navbar__top__right flex">
+          <div class="navbar__top__right__contact flex">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:(994) 12 480 10 22">(994) 12 480 10 22 </a>
+            <a href="">(994) 55 281 86 84</a>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <ul class="navbar__top__right__languages flex">
+            <li class="az active"><a href="">AZ</a></li>
+            <li><a href="">EN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar__bottom flex">
+        <div class="navbar__logo">
+          <a href="./index.html"
+            ><img src="./assets/images/Header/Homepage-logo.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar__bottom__right flex">
+          <nav>
+            <ul class="navbar__links">
+              <li><a href="">Ana səhifə</a></li>
+              <li><a href="">Haqqımızda</a></li>
+              <li><a href="">Xidmətlər</a></li>
+              <li><a href="">Vakansiyalar</a></li>
+              <li><a href="./articles.html">Məqalələr</a></li>
+              <li><a href="">Əməkdaşlar</a></li>
+              <li><a href="">Əlaqə</a></li>
+            </ul>
+          </nav>
+          <input class="navbar__search" type="text" placeholder="AXTAR" />
+          <div class="navbar__search__btn">
+            <i class="fa-solid fa-x close"></i>
+            <i class="fa-solid fa-magnifying-glass search"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="background">
+        <div
+          class="background__img b1"
+          style="
+            background-image: url(./assets/images/Header/Homepage-background1.png);
+          "
+        >
+          <div class="background__text">
+            <p>AZƏRBAYCANDAKI&nbsp;TƏRƏFDAŞLARIMIZA</p>
+            <p>TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+          </div>
+        </div>
+        <div
+          class="background__img b2"
+          style="
+            background-image: url(./assets/images/Header/Homepage-background2.png);
+          "
+        >
+          <div class="background__text">
+            <p>TÜRKİYƏDƏKİ&nbsp;TƏRƏFDAŞLARIMIZA</p>
+            <p>TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+          </div>
+        </div>
+        <div
+          class="background__img b3"
+          style="
+            background-image: url(./assets/images/Header/Homepage-background3.png);
+          "
+        >
+          <div class="background__text">
+            <p>ALMANİYADAKI&nbsp;TƏRƏFDAŞLARIMIZA</p>
+            <p>TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="container about__content flex">
+        <h2>Haqqımızda</h2>
+        <div class="about__content__image">
+          <img src="./assets/images/About/about-img.png" alt="" />
+        </div>
+        <div class="about__content__detail">
+          <h2>Haqqımızda</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. <br /><br />
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+          <a class="btn about__btn" href="">ƏTRAFLI</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__title">
+        <h2>Xidmətlər</h2>
+      </div>
+      <div class="services__content">
+        <div
+          class="services__content-image"
+          style="
+            background: linear-gradient(
+                89.89deg,
+                rgba(0, 12, 54, 0.8) 0.09%,
+                rgba(0, 22, 100, 0) 63.51%
+              ),
+              linear-gradient(
+                0deg,
+                rgba(0, 22, 100, 0.3),
+                rgba(0, 22, 100, 0.3)
+              ),
+              url(./assets/images/Services/Services-img.png) center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="services__content-detail container2">
+            <h3>Vergi yoxlamasının analoqu</h3>
+            <p>
+              Vergi orqanları bu gün müxtəlif yollarla bir yoxlama apara
+              bilərlər. Hətta yoxlamanın aparılmasını təmin etmək üçün polis
+              çağırılmasına icazə verən qaydalar mövcuddur. Hər halda, vergi
+              orqanlarının hərəkətləri sənədlərin öyrənilməsini və aparıcı
+              mütəxəssislərə bir sıra sualları əhatə edəcəkdir...
+            </p>
+            <a class="btn services__btn" href="">ƏTRAFLI</a>
+          </div>
+        </div>
+
+        <div
+          class="services__content-image"
+          style="
+            background: linear-gradient(
+                89.89deg,
+                rgba(0, 12, 54, 0.8) 0.09%,
+                rgba(0, 22, 100, 0) 63.51%
+              ),
+              linear-gradient(
+                0deg,
+                rgba(0, 22, 100, 0.3),
+                rgba(0, 22, 100, 0.3)
+              ),
+              url(./assets/images/Services/Services-img1.png) center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="services__content-detail container2">
+            <h3>Vergi yoxlamasının analoqu</h3>
+            <p>
+              Vergi orqanları bu gün müxtəlif yollarla bir yoxlama apara
+              bilərlər. Hətta yoxlamanın aparılmasını təmin etmək üçün polis
+              çağırılmasına icazə verən qaydalar mövcuddur. Hər halda, vergi
+              orqanlarının hərəkətləri sənədlərin öyrənilməsini və aparıcı
+              mütəxəssislərə bir sıra sualları əhatə edəcəkdir...
+            </p>
+            <a class="btn services__btn" href="">ƏTRAFLI</a>
+          </div>
+        </div>
+
+        <div
+          class="services__content-image"
+          style="
+            background: linear-gradient(
+                89.89deg,
+                rgba(0, 12, 54, 0.8) 0.09%,
+                rgba(0, 22, 100, 0) 63.51%
+              ),
+              linear-gradient(
+                0deg,
+                rgba(0, 22, 100, 0.3),
+                rgba(0, 22, 100, 0.3)
+              ),
+              url(./assets/images/Services/Services-img2.png) center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="services__content-detail container2">
+            <h3>Vergi yoxlamasının analoqu</h3>
+            <p>
+              Vergi orqanları bu gün müxtəlif yollarla bir yoxlama apara
+              bilərlər. Hətta yoxlamanın aparılmasını təmin etmək üçün polis
+              çağırılmasına icazə verən qaydalar mövcuddur. Hər halda, vergi
+              orqanlarının hərəkətləri sənədlərin öyrənilməsini və aparıcı
+              mütəxəssislərə bir sıra sualları əhatə edəcəkdir...
+            </p>
+            <a class="btn services__btn" href="">ƏTRAFLI</a>
+          </div>
+        </div>
+
+        <div
+          class="services__content-image"
+          style="
+            background: linear-gradient(
+                89.89deg,
+                rgba(0, 12, 54, 0.8) 0.09%,
+                rgba(0, 22, 100, 0) 63.51%
+              ),
+              linear-gradient(
+                0deg,
+                rgba(0, 22, 100, 0.3),
+                rgba(0, 22, 100, 0.3)
+              ),
+              url(./assets/images/Services/Services-img3.png) center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="services__content-detail container2">
+            <h3>Vergi yoxlamasının analoqu</h3>
+            <p>
+              Vergi orqanları bu gün müxtəlif yollarla bir yoxlama apara
+              bilərlər. Hətta yoxlamanın aparılmasını təmin etmək üçün polis
+              çağırılmasına icazə verən qaydalar mövcuddur. Hər halda, vergi
+              orqanlarının hərəkətləri sənədlərin öyrənilməsini və aparıcı
+              mütəxəssislərə bir sıra sualları əhatə edəcəkdir...
+            </p>
+            <a class="btn services__btn" href="">ƏTRAFLI</a>
+          </div>
+        </div>
+
+        <div
+          class="services__content-image"
+          style="
+            background: linear-gradient(
+                89.89deg,
+                rgba(0, 12, 54, 0.8) 0.09%,
+                rgba(0, 22, 100, 0) 63.51%
+              ),
+              linear-gradient(
+                0deg,
+                rgba(0, 22, 100, 0.3),
+                rgba(0, 22, 100, 0.3)
+              ),
+              url(./assets/images/Services/Services-img4.png) center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="services__content-detail container2">
+            <h3>Vergi yoxlamasının analoqu</h3>
+            <p>
+              Vergi orqanları bu gün müxtəlif yollarla bir yoxlama apara
+              bilərlər. Hətta yoxlamanın aparılmasını təmin etmək üçün polis
+              çağırılmasına icazə verən qaydalar mövcuddur. Hər halda, vergi
+              orqanlarının hərəkətləri sənədlərin öyrənilməsini və aparıcı
+              mütəxəssislərə bir sıra sualları əhatə edəcəkdir...
+            </p>
+            <a class="btn services__btn" href="">ƏTRAFLI</a>
+          </div>
+        </div>
+      </div>
+      <button class="change__btn next__btn flex">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="change__btn previous__btn flex">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </section>
+
+    <section class="customers">
+      <h2>Müştərilərimiz</h2>
+      <div class="customers__top">
+        <p>
+          “Alias Group” müştərilərimizi hər şeydən üstün tutur. Sizin üçün
+          çalışmaq bizə məmnunluq hiss etdirir. Müştərilərimiz ilə tanış ola
+          bilərsiniz.
+        </p>
+        <div class="customers__btns flex">
+          <button class="move previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="move next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="customers__slide">
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-1.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-2.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-3.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-4.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-5.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-6.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-7.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-8.png" alt="" />
+        </div>
+        <div class="customers__slide-image">
+          <img src="./assets/images/Customers/Customer-.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top flex">
+        <div class="footer__logo">
+          <img src="./assets/images/Footer/Group 3318.png" alt="" />
+        </div>
+        <ul class="footer__menu">
+          <li><a href="">Haqqımızda</a></li>
+          <li><a href="">Xidmətlər</a></li>
+          <li><a href="">Vakansiyalar</a></li>
+          <li><a href="">Vakansiyalar</a></li>
+          <li><a href="">Məqalələr</a></li>
+          <li><a href="">Əlaqə</a></li>
+        </ul>
+        <div class="footer__top__right flex">
+          <div class="footer__top__right__location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span
+              >Bakı şəh., Nərimanov r-nu, X.Şuşinski <br />
+              ilə M.Sənani küçələrinin kəsişməsi <br />
+              (Bina MTK)</span
+            >
+          </div>
+          <div class="footer__top__right__contact">
+            <i class="fa-solid fa-phone"></i>
+            <span
+              >(994) 12 480 10 22 <br />
+              (994) 55 281 86 84</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom flex">
+        <div class="footer__copyrights">
+          Copyright &copy; 2020 ALiAS Group - Bütün hüquqlar qorunur.
+        </div>
+        <ul class="footer__links flex">
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of use</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

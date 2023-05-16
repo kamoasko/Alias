@@ -1,0 +1,394 @@
+.background {
+  display: flex;
+  height: 85.2rem;
+  position: relative;
+}
+
+.navbar__bottom {
+  background: transparent;
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+}
+
+.navbar__search {
+  top: 0;
+}
+
+.navbar__search__btn.active .close {
+  opacity: 1;
+  z-index: 500;
+  position: absolute;
+  top: 4rem;
+  right: 2%;
+}
+
+.background__img {
+  height: 100%;
+  width: 33.333334%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1.3s all ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.b2 {
+  border-left: 0.3rem solid var(--color-white);
+  border-right: 0.3rem solid var(--color-white);
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover {
+  width: 100%;
+  background-position: center;
+  transition: 1.3s all ease-in-out;
+}
+
+.background__text {
+  position: absolute;
+  top: 63%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.background__text p {
+  line-height: 8.5rem;
+  opacity: 0;
+  transition: 1.3s all ease-in-out;
+}
+
+.background__text p:first-child {
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem var(--color-white);
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background__text p:last-child {
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+.b1:hover p,
+.b2:hover p,
+.b3:hover p {
+  opacity: 1;
+}
+
+.about {
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+
+.about__content {
+  column-gap: 11.9rem;
+}
+
+.about__content > h2 {
+  display: none;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  align-self: flex-start;
+}
+
+.about__content__image {
+  flex: 1;
+  border-radius: 1rem;
+}
+
+.about__content__image img {
+  border-radius: 1rem;
+}
+
+.about__content__detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.1rem;
+}
+
+.about__content__detail p {
+  margin-bottom: 2.9rem;
+}
+
+.btn {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.8rem;
+  height: 4.8rem;
+}
+
+.about__btn {
+  background: var(--color-main);
+  color: var(--color-white);
+}
+
+.services {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.services__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.services__content {
+  margin-top: 3.1rem;
+  opacity: 0.95;
+  height: 49.7rem;
+}
+
+.services__content-image {
+  height: 100%;
+}
+
+.change__btn {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  backdrop-filter: blur(1.5rem);
+  justify-content: center;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 100%;
+  position: absolute;
+  top: 43%;
+  transform: translateY(50%);
+}
+
+.next__btn {
+  left: 2rem;
+}
+
+.previous__btn {
+  right: 2rem;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: var(--color-main);
+}
+
+.services__content-detail {
+  padding: 8rem 0;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+}
+
+.services__content-detail h3 {
+  color: var(--color-white);
+}
+
+.services__content-detail p {
+  max-width: 64.4rem;
+}
+
+.services__btn {
+  background-color: var(--color-white);
+  color: var(--color-main);
+}
+
+.customers {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
+.customers__top {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.customers__top p {
+  max-width: 44.7rem;
+}
+
+.customers__btns {
+  column-gap: 2rem;
+}
+
+.move {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  justify-content: center;
+}
+
+.customers__slide {
+  margin: 3rem 0 0 -2.9rem;
+}
+
+.customers__slide .slick-slide {
+  margin: 0 0 0 2.9rem;
+}
+
+.customers__slide-image {
+  width: 32.8rem;
+  height: 16.3rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+}
+
+.customers__slide-image img {
+  object-fit: contain;
+}
+
+@media (max-width: 1206px) {
+  .background__text {
+    top: 55%;
+  }
+}
+
+@media (max-width: 1179px) {
+  .services .slick-arrow {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1044px) {
+  .services__content-detail {
+    padding: 8rem 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .background__text p:first-child {
+    font-size: 2.4rem;
+  }
+
+  .background__text p:last-child {
+    font-size: 5.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    flex-direction: column;
+  }
+
+  .background__img {
+    width: 100%;
+    height: 33.333334%;
+  }
+
+  .b2 {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0.3rem solid var(--color-white);
+    border-bottom: 0.3rem solid var(--color-white);
+  }
+
+  .b1:hover,
+  .b2:hover,
+  .b3:hover {
+    height: 100%;
+  }
+
+  .background__text {
+    top: 70%;
+  }
+
+  .background__text p:first-child {
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+  }
+
+  .background__text p:last-child {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+
+  .about__content {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .about__content > h2 {
+    display: block;
+  }
+
+  .about__content__detail {
+    justify-content: center;
+  }
+
+  .about__content__detail > h2 {
+    display: none;
+  }
+
+  .services {
+    padding: 2rem 0;
+  }
+
+  .services__title h2 {
+    font-size: 2.4rem;
+  }
+
+  .services__content {
+    margin-top: 2rem;
+    height: 63.3rem;
+  }
+
+  .services__content-detail h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .customers {
+    margin-top: 2rem;
+  }
+
+  .customers h2 {
+    font-size: 2.4rem;
+  }
+
+  .customers__slide-image {
+    width: 21.1rem;
+    height: 10.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+
+  .customers__btns {
+    display: none;
+  }
+}

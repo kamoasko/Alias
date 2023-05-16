@@ -1,0 +1,382 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  color: var(--color-white);
+  position: relative;
+}
+
+.navbar a {
+  color: var(--color-white);
+}
+
+.navbar__top {
+  background-color: var(--color-main);
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.navbar__menu {
+  display: none;
+  flex-direction: column;
+  width: 1.8rem;
+  height: 1.2rem;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar__menu > span {
+  height: 0.2rem;
+  background-color: var(--color-white);
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar__menu span:nth-child(1) {
+  width: 100%;
+}
+
+.navbar__menu span:nth-child(2) {
+  width: 1.4rem;
+}
+
+.navbar__menu span:nth-child(3) {
+  width: 1rem;
+}
+
+.navbar__menu.active span:nth-child(1) {
+  transform: translate(0, 6px) rotate(-47deg);
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+
+.navbar__menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__menu.active span:nth-child(3) {
+  transform: translate(0, -9px) rotate(47deg);
+  width: 100%;
+}
+
+.navbar__menu > span {
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar__whatsapp {
+  display: none;
+  font-size: 2rem;
+}
+
+.navbar__mobile {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding: 7.6rem 1.6rem 4rem;
+  position: absolute;
+  width: 100%;
+  height: 50rem;
+  top: 0;
+  left: -100%;
+  background-color: var(--color-main);
+  transition: 0.3s;
+  z-index: 800;
+}
+
+.navbar__mobile.active {
+  left: 0;
+}
+
+.navbar__mobmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+
+.navbar__mobile__langs {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  margin-top: 5.7rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.navbar__mobile__langs__item {
+  background: var(--color-white);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.4rem;
+  height: 5rem;
+  border: 0.1rem solid #d9d9d9;
+}
+
+.navbar__mobile__langs__item.active {
+  background-color: var(--color-main);
+}
+
+.navbar__mobile__langs__item a {
+  color: var(--color-main);
+}
+
+.navbar__mobile__langs__item.active a {
+  color: var(--color-white);
+}
+
+.navbar__top__left {
+  column-gap: 1.4rem;
+}
+
+.navbar__top__right {
+  column-gap: 5.6rem;
+}
+
+.navbar__top__right__contact {
+  column-gap: 1.5rem;
+}
+
+.navbar__top__right__contact i {
+  font-size: 1.8rem;
+}
+
+.navbar__top__right__contact i:first-child {
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.navbar__top__right__languages {
+  column-gap: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.active {
+  font-weight: 500;
+}
+
+.az {
+  position: relative;
+}
+
+.az::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 100%;
+  width: 80%;
+  height: 0.1rem;
+  background-color: var(--color-white);
+  border: 0.1rem solid var(--color-white);
+  transform: rotate(-90deg);
+}
+
+.navbar__bottom {
+  background: var(--color-bg3);
+  justify-content: space-between;
+  padding: 3rem 2.2rem;
+}
+
+.navbar__logo {
+  width: 5.7rem;
+  height: 7rem;
+}
+
+.navbar__logo img {
+  object-fit: contain;
+}
+
+.navbar__bottom__right {
+  column-gap: 9.6rem;
+}
+
+.navbar__links {
+  display: flex;
+  column-gap: 3.9rem;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  background-color: transparent;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 9rem;
+  top: 5.5rem;
+  right: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar__search.active {
+  width: 100%;
+  background-color: #f2f5ff;
+}
+
+.navbar__search__btn {
+  cursor: pointer;
+  font-size: 1.6rem;
+  z-index: 200;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar__search__btn .close {
+  opacity: 0;
+  color: var(--color-main);
+}
+
+.navbar__search__btn.active .close {
+  opacity: 1;
+  z-index: 500;
+  position: absolute;
+  top: 9.5rem;
+  right: 2%;
+}
+
+.navbar__search__btn.active .search {
+  opacity: 0;
+}
+
+.footer {
+  color: var(--color-white);
+  margin-top: 8.1rem;
+  padding: 4rem 2rem 2rem;
+  background-color: var(--color-main);
+  font-size: 1.4rem;
+}
+
+.footer a {
+  color: var(--color-white);
+}
+
+.footer__top {
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 7.8rem;
+}
+
+.footer__menu {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  column-gap: 6.1rem;
+  row-gap: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.01em;
+  padding: 0 2rem;
+}
+
+.footer__top__right {
+  column-gap: 9.6rem;
+  justify-content: center;
+}
+
+.footer__top__right i {
+  font-size: 2rem;
+}
+
+.footer__top__right__location,
+.footer__top__right__contact {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.footer__bottom {
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.footer__links {
+  column-gap: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .navbar__links {
+    column-gap: 2.4rem;
+  }
+
+  .navbar__top__right {
+    column-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar__top__left,
+  .navbar__top__right,
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: flex;
+  }
+
+  .navbar__search {
+    top: 5rem;
+  }
+
+  .navbar__search__btn.active .close {
+    top: 9rem;
+    right: 4%;
+  }
+
+  .navbar__whatsapp {
+    display: block;
+  }
+
+  .footer__menu {
+    display: grid;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  .footer__top {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+
+  .footer__top__right {
+    flex-wrap: wrap;
+    row-gap: 3.4rem;
+    justify-content: flex-start;
+  }
+
+  .footer__bottom {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+
+  .footer__links {
+    order: -1;
+  }
+
+  .footer__menu {
+    column-gap: 4rem;
+    padding: 0 1rem;
+  }
+}
