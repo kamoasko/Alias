@@ -271,9 +271,23 @@
 
 .follow {
   margin-top: 10.7rem;
+  column-gap: 10.8rem;
 }
 
-@media (max-width: 1206px) {
+.follow__content {
+  background-color: var(--color-white);
+  padding: 6rem 7rem;
+}
+
+.follow__content p {
+  margin-top: 2.1rem;
+}
+
+.follow__content-submit {
+  margin-top: 3rem;
+}
+
+.submit__btn @media (max-width: 1206px) {
   .background__text {
     top: 55%;
   }
