@@ -269,6 +269,10 @@
   object-fit: contain;
 }
 
+.follow {
+  margin-top: 10.7rem;
+}
+
 @media (max-width: 1206px) {
   .background__text {
     top: 55%;
