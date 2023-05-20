@@ -259,6 +259,15 @@
   opacity: 0;
 }
 
+.links {
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.links .active {
+  color: var(--color-main);
+}
+
 .footer {
   color: var(--color-white);
   margin-top: 8.1rem;
