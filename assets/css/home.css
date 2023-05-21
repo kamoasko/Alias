@@ -47,7 +47,7 @@
 
 .background__text {
   position: absolute;
-  top: 63%;
+  top: 50%;
   left: 2%;
   display: flex;
   flex-direction: column;
@@ -324,13 +324,21 @@
   width: 63.9rem;
 }
 
-@media (max-width: 1206px) {
+/* @media (max-width: 1206px) {
   .background__text {
     top: 55%;
   }
-}
+} */
 
 @media (max-width: 1179px) {
+  .background__text p:first-child {
+    font-size: 3rem;
+  }
+
+  .background__text p:last-child {
+    font-size: 6rem;
+  }
+
   .services .slick-arrow {
     opacity: 0;
   }
@@ -349,10 +357,12 @@
 
 @media (max-width: 992px) {
   .background__text p:first-child {
+    line-height: 3.4rem;
     font-size: 2.4rem;
   }
 
   .background__text p:last-child {
+    line-height: 3.4rem;
     font-size: 5.8rem;
   }
 
@@ -365,6 +375,16 @@
     order: -1;
     padding: 0;
     background-color: transparent;
+  }
+}
+
+@media (max-width: 860px) {
+  .background__text p:first-child {
+    font-size: 1.6rem;
+  }
+
+  .background__text p:last-child {
+    font-size: 4rem;
   }
 }
 
@@ -392,17 +412,15 @@
   }
 
   .background__text {
-    top: 70%;
+    top: 65%;
   }
 
   .background__text p:first-child {
-    font-size: 1.8rem;
-    line-height: 3.4rem;
+    font-size: 1.4rem;
   }
 
   .background__text p:last-child {
     font-size: 3rem;
-    line-height: 3.4rem;
   }
 
   .about__content {
