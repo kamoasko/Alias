@@ -25,7 +25,7 @@
 
 .background__img {
   height: 100%;
-  width: 33.333334%;
+  flex: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,9 +42,7 @@
 .b1:hover,
 .b2:hover,
 .b3:hover {
-  width: 100%;
-  background-position: center;
-  transition: 1.3s all ease-in-out;
+  flex: 3;
 }
 
 .background__text {
